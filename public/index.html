@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>M4Y digital service provider</title>
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="oglogo.jpeg"/>
+  <style>
+
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .block-parallax-1 {
+    overflow: hidden;
+    position: relative;
+  }
+  .block-parallax-1 .parallax-bg {
+    background-attachment: fixed;
+    background-image: url('main.jpg');
+    background-position: 0px 0px;
+    background-repeat: repeat;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    min-width: 1170px;
+    object-fit: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+  .block-parallax-1 .md-box {
+    padding: 200px 0 200px;
+    background: rgba(0, 0, 0, 0.75);
+    position: relative;
+    height: 100%;
+    text-align: center;
+
+  }
+  .block-parallax-1 .md-box h1 {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+  }
+
+
+
+  .block-parallax-2 {
+    overflow: hidden;
+    position: relative;
+  }
+  .block-parallax-2 .parallax-bg2 {
+    background-attachment: fixed;
+    background-image: url('partner.jpg');
+    background-position: 0px 0px;
+    background-repeat: repeat;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    min-width: 1170px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+  .block-parallax-2 .md-box2 {
+    padding: 100px 0 100px;
+    background: rgba(0, 0, 0, 0.75);
+    position: relative;
+    height: 100%;
+    text-align: center;
+
+  }
+  .block-parallax-2 .md-box2 h3 {
+    color: #FFFFFF;
+    font-weight: 300;
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+    font-size: 30px;
+  }
+
+
+  /* about */
+  .block-parallax-1a {
+    overflow: hidden;
+    position: relative;
+  }
+  .block-parallax-1a .parallax-bga {
+    background-attachment: fixed;
+    background-image: none;
+    /* url("about.jpg"); */
+    background-position: 0px 0px;
+    background-repeat: repeat;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    min-width: 1170px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+  .block-parallax-1a .md-boxa {
+    padding: 200px 0 200px;
+    background: rgba(0, 0, 0, 0);
+    position: relative;
+    height: 100%;
+    text-align: center;
+
+  }
+  .block-parallax-1a .md-box h1 {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+  }
+
+
+  h2 {
+    color: #555;
+    text-align: center;
+    padding: 25px 0;
+    margin: 0;
+  }
+
+
+  .toptext{
+    /* font-size: 8px; */
+    padding-left: 10%;
+    width: 50%;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+
+  h6{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10%;
+    width: 45%;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+  }
+
+  .images
+  {
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #content
+  {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: 90px;
+    height: auto;
+    max-width: auto;
+    overflow-y: auto;
+    overflow-x:auto;
+  }
+
+  .abouttext{
+    font-size: 32px;
+    white-space: nowrap;
+  }
+
+  .whyuss {
+    overflow: hidden;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;  <footer class="footer text-center" style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+        <div class="container">
+            <div class="row">
+
+                <div class="footlogo" style="margin:auto;">
+                  <img src="oglogo.jpeg" alt="logo" style="width:80px; height:80px;">
+                </div>
+
+                <div class="footmenu row">
+                  <a href="#about" class="col-lg-3 col-sm-12" style="margin: 10px 25px; text-decoration: none;">ABOUT US</a>
+                  <a href="contact.html" class="col-lg-3 col-sm-12" style="margin: 10px 25px; text-decoration: none;">CONTACT US</a>
+                  <a href="tandc.html" class="col-lg-3 col-sm-12" style="margin: 10px 25px; text-decoration: none; display: inline;">TERMS AND CONDITIONS</a>
+                </div>
+
+                <div class="social" style="margin: auto;">
+                  <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/OneGarage" style="background: black;"><i class="fab fa-fw fa-facebook-f"></i></a>
+                  <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/OneGarage/" style="background: black;"><i class="fab fa-fw fa-instagram"></i></a>
+                </div>
+
+
+                  </div>
+
+                  <br><br>
+
+                <div class="div_top">
+                  <div class=" row">
+                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6" style="display:inline-block;">
+                      <img src="f1.png" alt="f1">
+                      <p style="display:inline-block; color: black;">Taste Assured Food Safety</p>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12" style="display:inline-block;">
+                      <img src="f2.png" alt="f1">
+                      <p style="display:inline-block; color: black;">Secure Payment</p>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12" style="display:inline-block;">
+                      <img src="f3.png" alt="f1">
+                      <p style="display:inline-block; color: black;">24hrs free Cancellation</p>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12" style="display:inline-block;">
+                      <img src="f4.png" alt="f1">
+                      <p style="display:inline-block; color: black;">100% Halal Food</p>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12" style="display:inline-block;">
+                      <img src="f5.png" alt="f1">
+                      <p style="display:inline-block; color: black;">Certified Professionals</p>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12" style="display:inline-block;">
+                      <img src="f6.png" alt="f1">
+                      <p style="display:inline-block; color: black;">Money Back Guarantee</p>
+                    </div>
+
+
+                  </ul>
+                </div>
+
+        </div>
+        <div class="container"><small>© OneGarage 2018. All Rights Reserved</small></div>
+    </footer>
+    width: 50%;
+  
+
+  .whyuss:before,
+  .whyuss:after {
+    background-color: #d91100;
+    font-family: Arial, Helvetica, sans-serif;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+
+  .whyuss:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+
+  .whyuss:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
+  .container1{
+    margin-left: auto;
+    margin-right: auto;
+    padding: auto;
+  }
+
+  .circleborder {
+    border: 1px solid #3c3c3cbf;
+    border-radius: 100%;
+    display: inline-block;
+    padding: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .circleborder:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .typehead{
+    font-size: 20px;
+    padding: 16px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight: 500;
+  }
+
+  .typecon{
+    font-size: 15px;
+    padding: 10px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+
+  .topnav {
+  /* background-color: black; */
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav li {
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav{
+  /* background-color: black; */
+  overflow: hidden;
+}
+
+.topnav li:hover {
+  border-bottom: 3px solid #c21630;
+}
+
+.topnav li.active {
+  border-bottom: 3px solid #c21630;
+}
+
+.aboutcol{
+  width: 80%; height: auto;
+}
+
+.aboutres{
+  padding-right: 60px;font-size:1rem; color: #3c3c3cbf;
+}
+
+
+.floating-btn1{
+  width: 55px;
+  height: 55px;
+  background-color: #009879;
+  display: flex;
+  border-radius: 50%;
+  color: black;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+  html,body{
+    overflow-x: hidden;
+    max-width: 100%:
+  }
+   .toptext{
+     padding-left: 10%;
+     width: 100%;
+     /* font-size: 7vw; */
+     text-align: left;
+   }
+   .block-parallax-1{
+     height: 50%;
+   }
+
+   .cardb{
+     /* height: 350px; */
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     transition: height 0.3s;
+      margin: 5px 1% 5px 1%;
+      position: relative;
+      -webkit-transition: height 0.5s;
+      overflow: hidden;
+      border-radius: 10px;
+      /* width: 80%; */
+   }
+
+   /* .aboutcol{
+     width: 55%;
+     font-size: 2rem;
+   } */
+
+
+   .abouttext{
+     font-size: 2rem;
+     white-space: nowrap;
+   }
+
+   .div-top{
+     display: none;
+   }
+
+
+   .aboutres{
+     font-size: 1rem;
+   }
+
+}
+
+
+
+
+
+
+
+
+  </style>
+</head>
+
+
+<body id="page-top">
+
+
+
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: white;">
+      <div class="container">
+        <a class="navbar-left" href="index.html"><img src = "oglogo.jpeg" style="max-width:50px; margin-top: 5px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span>Menu <i class="fas fa-bars"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+          <ul class="navbar-nav ml-auto text-white topnav">
+    				<li class="nav-item active" style="margin-right: 10px;">
+    					<a class="nav-link nava js-scroll-trigger" href="index.html#home">HOME <span class="sr-only">(current)</span></a>
+    				</li>
+    				<!--<li class="nav-item" style="margin-right: 10px;">
+    					<a class="nav-link nava js-scroll-trigger" href="index.html#about">ABOUT US</a>
+    				</li>
+    				<li class="nav-item" style="margin-right: 10px;">
+    					<a class="nav-link nava js-scroll-trigger" href="index.html#whyus">WHY US</a>
+    				</li>-->
+    				<li class="nav-item " style="margin-right: 10px;">
+    					<a class="nav-link nava js-scroll-trigger" href="index.html#services">SERVICES</a>
+    				</li>
+          
+            <li class="nav-item" style="margin-right: 10px;">
+    					<a class="nav-link nava js-scroll-trigger" href="contact.html">CONTACT US</a>
+    				</li>
+             <li class="nav-item " style="margin-right: 10px;">
+    					<a class="nav-link nava js-scroll-trigger" href="view.html">VIEW FORMS</a>
+    				</li>
+            <li class="nav-item " style="margin-right: 10px;">
+    					<!-- <a class="nav-link nava js-scroll-trigger" href="view.html">VIEW FORMS</a> -->
+              <a class = "nav-link nava js-scroll-trigger" href="https://wa.me/+911234567890"><i class="fab fa-whatsapp" style="color: black;width:40px; height:35px; padding-bottom:5px;"></i></a>
+    				</li>
+    			</ul>
+
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+  <!-- Home section -->
+  <section class="block-parallax-1" id="home">
+    <div class="parallax-bg"></div>
+    <div class="md-box">
+      <h1><p class="toptext">M4Y is a digital service provider that aims to provide software,
+        designing and marketing solutions to individuals and
+        businesses.</p></h1>
+      <h2 style="font-size: 18px; font-family: Arial, Helvetica, sans-serif;
+      padding-left: 10%;
+      width: 50%;
+      line-height: 1.5;
+      text-align: left;
+      color: white;">India's <span style="color: #c21630;"> M4Y has now set a new path towards
+        Digital Solutions</span>, visit now!</h2>
+    </div>
+  </section>
+
+
+
+
+  <!-- <div class="floating-btn1">
+    <a href="https://wa.me/+911234567890"><i class="fab fa-whatsapp" style="color: white;"></i></a>
+  </div> -->
+
+
+
+
+
+
+
+  <!-- About section -->
+ <!---- <section id="about" style="margin-bottom: 200px; position: relative;">
+    <div class="container-fluid" id="content" style="overflow: hidden; display:grid;">
+      <div class="row">
+        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+          <img src="oglogo.jpeg" alt="1" style="width: 70%;">
+        </div>
+
+        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 aboutcol">-->
+          <!-- <div class="parallax-bga"></div>
+          <div class="md-boxa"> -->
+          <!----  <div class="abouttext">
+              <p class="toptext">ABOUT <span style="
+              color: #c21630"> US</span></p>
+            </div>
+            <div class="aboutres">
+              <p style="width: 100%; line-height: 2;" class="toptext">OneGarage is a reliable platform for automobile transactions built of trust and innovation. We have showrooms in Pune. We are growing at an exponential rate and are looking to expand in the automobile ecosystem. Our mission is to facilitate the buying and selling of tested and certified two-wheelers with ease and at affordable prices. We also provide services of two- wheeler. We hope to make your automobile transaction efficient and smooth.
+We capitalize on the potential presented by the Indian automobile industry and ensure your growth with ours. We are thriving to change the industry by providing a secure platform that enables you to become self-sufficient.</p><br>
+              <p style="width: 100%; line-height: 2;" class="toptext">We understand how the used-automobile transaction works and offer you the best services and assistance. Our pricing range is accommodative to all. So what are you waiting for? Contact us!</p>
+            </div>-->
+          <!-- </div> -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ <!---- <div class="testimonial-area testimonial-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">-->
+                        <!-- Section Tittle -->
+                       <!--- <div class="section-tittle text-center mb-80">-->
+                            <!-- <span>Our client testimonials</span> -->
+                           <!-- <h2>Owner's desk</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="text-align: center;">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <img src="owner1.jpeg" alt="" style="width: 130px; height: 130px; border-radius: 65px; margin-bottom: 20px;">
+                    <h5>Surbhi Dubey</h5>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <img src="owner2.jpeg" alt="" style="width: 130px; height: 130px; border-radius: 65px; margin-bottom: 20px;"><br>
+                    <h5>Madhuri Mane</h5>
+                  </div>
+                </div>
+            </div>
+        </div>-->
+
+
+
+
+
+<!-- why us section -->
+<!--<section id="whyus" style="margin-bottom: 200px; position: relative;">
+  <div class="container-fluid" id="content" style="overflow: hidden; display:grid;">
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+        <img src="whyus.jpg" alt="1" style="width: 100%;">
+      </div>
+
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 aboutcol">-->
+        <!-- <div class="parallax-bga"></div>
+        <div class="md-boxa"> -->
+         <!---- <div class="abouttext">
+            <p class="toptext">WHY <span style="
+            color: #c21630"> US</span></p>
+          </div>
+          <div class="aboutres">
+            <p style="width: 100%; line-height: 2;" class="toptext">Are you looking for a place to buy or sell a used bike or for bike service? Are you tired of dragging your feet from shop to shop? We have the solution to your problems.
+OneGarage, the trusted company for bike sales and service in Pune, offers you a platform where you can sell that two-wheeler you have been hoping to get off your hands for a while. Needless to say, if you are looking for a bike, this is the place to be. </p><br>
+            <p style="width: 100%; line-height: 2;" class="toptext">While buying and selling second-hand bikes or scooters, the prime concern a customer has is reliability. We have been offering trustworthy services. Our expert supervisors only encourage verified automobiles and guarantee your product’s security. We ensure your peace of mind. Who else can promise that?</p>
+          </div>-->
+        <!-- </div> -->
+
+     <!---- </div>
+    </div>
+  </div>
+</section>-->
+
+  <!-- services section -->
+  <section class="container" id="services" style="margin-top: 50px;">
+    <div class="row">
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+        <div class="cardb nopadding">
+          <img src="img1.jpeg" alt="Avatar" style="width: 100%;"/>
+          <div class="containera">
+            
+            <a class="nav-link nava js-scroll-trigger" href="contact.html"><h4 style="color: #434343d4; font-size: 20px;text-align: center; ">DEVELOPMENT!</h4></a>
+            <br><br>
+            <p style="color: #666666; width: 100%;">
+               We develop responsive, functional and super-fast websites.We keep User Experience in mind while creating websites. A website should load quickly and should be accessible even on a small view-port and slow internet connection.
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+        <div class="cardb nopadding" >
+        <img src="img2.jpeg" alt="Avatar" style="width:100%;">
+        <div class="containera">
+          <a class="nav-link nava js-scroll-trigger" href="contact.html"><h4 style="color: #434343d4; font-size: 20px; text-align: center;">CONSULTANCY SERVICES!</h4></a>
+          <p style="color: #666666; width: 100%;">
+            We are here to provide you with expert advice on your design and
+            development requirements.
+          </p>
+        </div>
+      </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+        <div class="cardb nopadding" >
+          <img src="img3.jpeg" alt="Avatar" style="width:100%;"><br><br>
+          <div class="containera">
+
+            <a class="nav-link nava js-scroll-trigger" href="contact.html"><h4 style="color: #434343d4; font-size: 20px; text-align: center;">DIGITAL VIDEOS!</h4></a>
+            <br><br>
+            <p style="color: #666666; width: 100%;">
+              We create a polished professional video that impresses your audience.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12"> -->
+
+</div>
+</section><br><br>
+
+
+
+    <!-- blogs section -->
+   <!---- <section class="container" id="blogs">--->
+      <!-- <div class="container"> -->
+       <!---- <div  style="margin:auto; padding-top: 50px; padding-bottom: 50px;">
+          <h3  class="whyuss" style="font-size:30px; margin:auto;">BLOGS</h3>
+        </div>
+        <div class="row" >
+          <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12" style="margin-bottom: 30px;">
+            <a href="blogs.html" style="text-decoration: none;" target="_blank">
+              <div class="carda" style="height: 430px;">
+                <img src="img4.jpg" alt="Avatar" style="width:100%; height: 75%;">
+                <div class="containera">
+                  <h4 style="color: #434343d4; font-size: 15px;">5 REASONS TO BUY A SECOND-HAND BIKE OVER A NEW ONE</h4>
+                  <p style="color: #666666; width: 100%; font-size: 14px; text-align: left;">While purchasing a two-wheeler like a scooter or a bike, one might find themselves faced with many questions. Models, mileage, color are not the only<br><span style="color: #c21630;">View</span>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12" style="margin-bottom: 30px;">
+            <a href="blog2.html" style="text-decoration: none;" target="_blank">
+              <div class="carda" style="height: 430px;">
+                <img src="img5.jpg" alt="Avatar" style="width:100%; height: 75%;">
+                <div class="containera">
+                  <h4 style="color: #434343d4; font-size: 15px;">A GUIDE TO BUY USED SECOND-HAND BIKES</h4>
+                  <p style="color: #666666; width: 100%; font-size: 14px;">
+                    If you have made up your mind about buying a second-hand two-wheeler, there are a bunch of queries you might have. Buying a two-wheeler is a big decision. <br><span style="color: #c21630;">View</span>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+
+
+
+      </div>
+    </section>-->
+
+
+
+
+<div class="fab">
+  <span> <i class="fa fa-whatsapp" aria-hidden="true"></i> </span>
+</div>
+
+
+
+
+
+<footer class="footer-section" id="footer" style="background-color: black; color: white; text-align: center;">
+        <div class="container" style="padding-top: 0px;">
+
+            <div class="footer-content pt-5 pb-5">
+                <div class="footerhead">
+                <p>Interested in Working Together? <a href="#" data-toggle="modal" data-target="#contactus" id="contact" > Click Here </a>  to Connect</p>
+                </div>
+                <div class="footer-logo">
+                            <a href="index.html"><img src="oglogo.jpeg" class="img-fluid logo" alt="logo" style=""></a>
+                </div>
+                <div class="footer-info" style="color: white;" >
+                              <a href="https://api.whatsapp.com/send?phone=1234567890" style="text-decoration: none; color: white;"><i class="fas fa-phone"></i> <span>+91 860XXXX</span></a><br>
+                              <a href="#" style="text-decoration: none; color: white;"><i class="fas fa-envelope"></i><span>Email: made4u.in</span></a><br>
+                              <a href="#" style="text-decoration: none; color: white;"><span>Address - Made 4 you Shop no 25, Keshav Nagar, Saudagar, Bangalore, karnataka 5620XX</span></a>
+
+                    </div><br>
+                   <!----<div class="footer-social-icon">
+                          <a href="https://www.facebook.com/onegaragepune" style="color: white; font-size: 25px;"><i class="fab fa-facebook-f "></i></a>&emsp;
+                           <a href="https://instagram.com/onegaragepune?igshid=j5sdjtpqpoe1" style="color: white; font-size: 25px;"><i class="fab fa-instagram"></i></a>&emsp;
+                           <a href="https://www.linkedin.com/company/75735991/admin/" style="color: white; font-size: 25px;"><i class="fab fa-linkedin-in"></i></a>&emsp;
+                           <a href="https://twitter.com/OneGaragepune"><i class="fab fa-twitter" style="color: white; font-size: 25px;"></i></a>&emsp;
+
+                      </div><br>-->
+                      <div class="copyright-text">
+                            <p>Copyright &copy; 2020, All Right Reserved By Made 4 you </p>
+                            <!--<p>Developed by <a href="http://www.softezi.in/" style="text-decoration: none;">So</a></p>-->
+                        </div>
+            </div>
+           
+        </div>
+        <div class="floating-btn1">
+          <a href="https://wa.me/+911234567890"><i class="fab fa-whatsapp" style="color: rgb(14, 224, 32); width: 55px; height:45px; margin-left: 79%; margin-bottom: 60px;"></i></a>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+  </div>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Third party plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <!-- Contact form JS-->
+  <script src="assets/mail/jqBootstrapValidation.js"></script>
+  <script src="assets/mail/contact_me.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Contact Us- CaterBinge</title>
+  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+  <link href="css/styles.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="redicon.png"/>
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-auth.js"></script>
+
+  <style>
+
+  #page-top{
+    overflow-x: hidden;
+  }
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+
+
+    .block-parallax-1 {
+      overflow: hidden;
+      position: relative;
+    }
+    .block-parallax-1 .parallax-bg {
+      background-attachment: fixed;
+      background-image: url('contact.png');
+      background-position: 0px 0px;
+      background-repeat: repeat;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      min-width: 1170px;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+    }
+    .block-parallax-1 .md-box {
+      padding: 200px 0 200px;
+      background: rgba(0, 0, 0, 0.5);
+      position: relative;
+      height: 100%;
+      text-align: center;
+
+    }
+    .block-parallax-1 .md-box h1 {
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 45px;
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+
+    .div-top{
+      display: none;
+    }
+    }
+  </style>
+</head>
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: white; padding-top: 0 !important;">
+  		<div class="container text-uppercase pt-3" style="padding-top: 10px !important;">
+  		<a class="navbar-brand text-white font-weight-bold js-scroll-trigger" href="index.html"><img src = "oglogo.jpeg" class = "logo"></a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="margin: auto;">
+  		Menu <i class="fas fa-bars"></i>
+  		</button>
+  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  			<ul class="navbar-nav ml-auto text-white topnav">
+  				<li class="nav-item" style="margin-right: 10px; padding-bottom: 8px;">
+  					<a class="nav-link nava js-scroll-trigger" href="index.html#home">Home <span class="sr-only">(current)</span></a>
+  				</li>
+  			<!----	<li class="nav-item" style="margin-right: 10px;">
+  					<a class="nav-link nava js-scroll-trigger" href="index.html#about">ABOUT US</a>
+  				</li>
+  				<li class="nav-item" style="margin-right: 10px;">
+  					<a class="nav-link nava js-scroll-trigger" href="index.html#whyus">WHY US</a>
+  				</li>-->
+  				<li class="nav-item " style="margin-right: 10px;">
+  					<a class="nav-link nava js-scroll-trigger" href="index.html#services">SERVICES</a>
+  				</li>
+  			<!----	<li class="nav-item" style="margin-right: 10px;">
+  					<a class="nav-link nava js-scroll-trigger" href="index.html#partner">PARTNERS</a>
+  				</li>-->
+          <li class="nav-item active" style="margin-right: 10px;">
+  					<a class="nav-link nava js-scroll-trigger" href="contact.html">CONTACT US</a>
+  				</li>
+          <li class="nav-item " style="margin-right: 10px;">
+            <a class="nav-link nava js-scroll-trigger" href="view.html">VIEW FORMS</a>
+        </li>
+        <li class="nav-item " style="margin-right: 10px;">
+          <!-- <a class="nav-link nava js-scroll-trigger" href="view.html">VIEW FORMS</a> -->
+          <a class = "nav-link nava js-scroll-trigger" href="https://wa.me/+911234567890"><i class="fab fa-whatsapp" style="color: black;width:40px; height:35px; padding-bottom:5px;"></i></a>
+        </li>
+  			</ul>
+  		</div>
+  		</div>
+  	</nav>
+
+    <!-- top section -->
+    <section class="block-parallax-1" id="home" style="margin-bottom: 50px;">
+      <div class="parallax-bg"></div>
+      <div class="md-box">
+        <h1 style="font-weight: 300;">GET IN TOUCH WITH US</h1>
+        <h4 style="color: white; font-weight: 300;">Submit Your Query to Get Full Details</h4>
+      </div>
+    </section>
+
+
+    <main class="my-form row">
+    <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12">
+        <div class="row justify-content-center">
+            <div>
+                    <div class="card">
+                        <div class="card-body">
+                          <div class="wrapper animated bounceInLeft">
+                            <div class="contact">
+                              <h3 class="contact-us">Contact Us</h3>
+                              <div class="alert">Your message has been sent!</div>
+                              <form id="contactForm">
+                                <!-- <p class="name-field"> -->
+                                  <label for="Field1">Name <span>*</span></label>
+                                  <input id="inputname" type="text" name="name" required>
+                                <!-- </p> -->
+                                <!-- <p class="company-field"> -->
+                                  <label for="Field2">Company</label>
+                                  <input type="text" name="company" id="inputcompany">
+                                <!-- </p> -->
+                                <!-- <p class="email-field"> -->
+                                  <label>Email <span>*</span></label>
+                                  <input type="email" name="email" id="inputemail" required>
+                                <!-- </p> -->
+                                <!-- <p class="phone-field"> -->
+                                  <label>Phone</label>
+                                  <input type="text" name="phone" id="inputphone">
+                                <!-- </p> -->
+                                <!-- <p class="message-field full"> -->
+                                  <label>Message</label>
+                                  <input type="textarea" name="message" rows="5" id="inputmessage"></textarea>
+                                <!-- </p> -->
+                                <!-- <p class="required-field">Required field <span>*</span></p> -->
+                                <!-- <p class="submit-button"> -->
+                                  <input type="button" id="saveForm" name="saveForm" value="Submit" class="greenbut">
+                                <!-- </p> -->
+                              </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
+       <!---- <div class="resthelp col-xl-6 col-lg-6 col-md-8 col-sm-12">
+          <h3 style="color: #434343; font-size: 20px; font-weight: 500;">MADE 4 YOU</h3>
+          <p style="color: #434343;">We are happy to answer all your queries, connect with us</p><br><br>
+          <a href="#" class="conclass">support@made4you.in</a><br>
+          <a href="#" class="conclass">+91 8600XXX</a><br>
+
+        </div>-->
+    </div>
+</main>
+
+
+
+
+<footer class="footer-section" id="footer" style="background-color: black; color: white; text-align: center;">
+        <div class="container" style="padding-top: 0px;">
+
+            <div class="footer-content pt-5 pb-5">
+                <div class="footerhead">
+                <p>Interested in Working Together? <a href="#" data-toggle="modal" data-target="#contactus" id="contact" > Click Here </a>  to Connect</p>
+                </div>
+                <div class="footer-logo">
+                            <a href="index.html"><img src="oglogo.jpeg" class="img-fluid logo" alt="logo" style=""></a>
+                </div>
+                <div class="footer-info" style="color: white;" >
+                              <a href="https://api.whatsapp.com/send?phone=919105210529" style="text-decoration: none; color: white;"><i class="fas fa-phone"></i> <span>+91 8600XXX</span></a><br>
+                              <a href="#" style="text-decoration: none; color: white;"><i class="fas fa-envelope"></i><span>Email: support@made4u.in</span></a><br>
+                              <a href="#" style="text-decoration: none; color: white;"><span>Address - Made 4 you, Shop no 25, Keshav Nagar, Saudagar, Bangalore, Karnataka 5620XX</span></a>
+
+                    </div><br>
+                   <!---- <div class="footer-social-icon">
+                          <a href="https://www.facebook.com/onegaragepune" style="color: white; font-size: 25px;"><i class="fab fa-facebook-f "></i></a>&emsp;
+                           <a href="https://instagram.com/onegaragepune?igshid=j5sdjtpqpoe1" style="color: white; font-size: 25px;"><i class="fab fa-instagram"></i></a>&emsp;
+                           <a href="https://www.linkedin.com/company/75735991/admin/" style="color: white; font-size: 25px;"><i class="fab fa-linkedin-in"></i></a>&emsp;
+                           <a href="https://twitter.com/OneGaragepune"><i class="fab fa-twitter" style="color: white; font-size: 25px;"></i></a>&emsp;
+
+                      </div><br>-->
+                      <div class="copyright-text">
+                            <p>Copyright &copy; 2020, All Right Reserved By Made 4 You </p>
+                           <!---- <p>Developed by <a href="http://www.softezi.in/" style="text-decoration: none;">SoftEzi</a></p>-->
+                        </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+<!-- Copyright Section-->
+<!-- <div class="copyright py-4 text-center text-white">
+    <div class="container"><small>© Caterbinge 2018. All Rights Reserved</small></div>
+</div> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Contact form JS-->
+<script src="assets/mail/jqBootstrapValidation.js"></script>
+<script src="assets/mail/contact_me.js"></script>
+<script src="js/index.js"></script>
+<!-- <script src="js/scripts.js"></script> -->
+  </body>
+</html>
